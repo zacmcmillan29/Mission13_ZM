@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<Recipe>
+
+<h1>Recipes</h1>
+
+<ul>
+    @foreach (var x in Model)
+    {
+        <li>@x.RecipeID - @x.RecipeTitle</li>
+
+    }
+</ul>
