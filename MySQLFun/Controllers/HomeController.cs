@@ -25,6 +25,9 @@ namespace MySQLFun.Controllers
             return View();
         }
 
+
+        //------ READ ----------
+
         public IActionResult ContactList()
         {
             //this pulls in the dataset info!
@@ -36,6 +39,9 @@ namespace MySQLFun.Controllers
             //pass dataset info to the view!
             return View(blah);
         }
+
+        //------ CREAD ----------
+
 
         [HttpGet]
         public IActionResult Create()
@@ -58,6 +64,37 @@ namespace MySQLFun.Controllers
 
 
         //------ EDIT ----------
+
+        [HttpGet]
+        public IActionResult Edit (int id)
+        {
+            var person = _repo.Bowlers.Single(x => x.BowlerID == id);
+            return View(person);
+        }
+
+        [HttpPost]
+        public IActionResult Edit (Bowler b)
+        {
+            _repo.SaveBowler(b);
+            return RedirectToAction("ContactList");
+        }
+
+        // ----- DELETE -------
+
+        [HttpGet]
+        public IActionResult Delete (int id)
+        {
+            var person = _repo.Bowlers.Single(x => x.BowlerID == id);
+            return View(person);
+        }
+
+        [HttpPost]
+        public IActionResult Delete (Bowler bowler)
+        {
+            _repo.DeleteBowler(bowler);
+            return RedirectToAction("ContactList");
+
+        }
 
     }    
 }

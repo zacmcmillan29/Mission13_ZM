@@ -128,3 +128,5 @@
 /Users/zacmcmillan/Library/Mobile Documents/com~apple~CloudDocs/IS junior core/WINTER 2022/IS 413/Mission Assignments/13_ZM_holder/Mission13_ZM/MySQLFun/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Admin/Contacts.razor.g.cs
 /Users/zacmcmillan/Library/Mobile Documents/com~apple~CloudDocs/IS junior core/WINTER 2022/IS 413/Mission Assignments/13_ZM_holder/Mission13_ZM/MySQLFun/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Contacts.razor.g.cs
 /Users/zacmcmillan/Library/Mobile Documents/com~apple~CloudDocs/IS junior core/WINTER 2022/IS 413/Mission Assignments/13_ZM_holder/Mission13_ZM/MySQLFun/obj/Debug/netcoreapp3.1/Razor/Views/Home/ContactList.cshtml.g.cs
+/Users/zacmcmillan/Library/Mobile Documents/com~apple~CloudDocs/IS junior core/WINTER 2022/IS 413/Mission Assignments/13_ZM_holder/Mission13_ZM/MySQLFun/obj/Debug/netcoreapp3.1/Razor/Views/Home/Edit.cshtml.g.cs
+/Users/zacmcmillan/Library/Mobile Documents/com~apple~CloudDocs/IS junior core/WINTER 2022/IS 413/Mission Assignments/13_ZM_holder/Mission13_ZM/MySQLFun/obj/Debug/netcoreapp3.1/Razor/Views/Home/Delete.cshtml.g.cs

@@ -17,8 +17,10 @@ namespace MySQLFun.Models
 
         //------ CRUD ------
 
+
         public void SaveBowler (Bowler b)
         {
+            _context.Update(b);
             _context.SaveChanges();
         }
 

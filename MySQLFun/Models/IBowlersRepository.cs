@@ -12,5 +12,6 @@ namespace MySQLFun.Models
         public void AddBowler(Bowler b);
 
         public void DeleteBowler(Bowler b);
+
     }
 }
