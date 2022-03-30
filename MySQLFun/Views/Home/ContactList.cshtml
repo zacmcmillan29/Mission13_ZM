@@ -28,18 +28,28 @@
     <tbody>
         @foreach (var x in Model)
         {
-            <tr>
-                <td>@x.BowlerFirstName</td>
-                <td>@x.BowlerMiddleInit</td>
-                <td>@x.BowlerLastName</td>
-                <td>@x.BowlerAddress</td>
-                <td>@x.BowlerCity</td>
-                <td>@x.BowlerState</td>
-                <td>@x.BowlerZip</td>
-                <td>@x.BowlerPhoneNumber</td>
-                <td>Edit</td>
-                <td>Delete</td>
-            </tr>
+        <tr>
+            <td>@x.BowlerFirstName</td>
+            <td>@x.BowlerMiddleInit</td>
+            <td>@x.BowlerLastName</td>
+            <td>@x.BowlerAddress</td>
+            <td>@x.BowlerCity</td>
+            <td>@x.BowlerState</td>
+            <td>@x.BowlerZip</td>
+            <td>@x.BowlerPhoneNumber</td>
+            <td class="text-center">
+                <form method="get" asp-action="Edit">
+                    <input type="hidden" name="appid" value="@x.BowlerID" />
+                    <button type="submit" class="btn btn-sm ">Edit</button>
+                </form>
+            </td>
+            <td class="text-center">
+                <form method="post" asp-action="Delete">
+                    <input type="hidden" name="appid" value="@x.BowlerID" />
+                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                </form>
+            </td>
+        </tr>
         }
         </tbody>
     </table>

@@ -29,7 +29,9 @@ namespace MySQLFun.Controllers
         {
             //this pulls in the dataset info!
             //var blah = _context.Recipes.ToList();
-            var blah = _repo.Bowlers.ToList();
+            var blah = _repo.Bowlers
+                .OrderBy(x => x.BowlerFirstName)
+                .ToList();
 
             //pass dataset info to the view!
             return View(blah);
@@ -38,13 +40,24 @@ namespace MySQLFun.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            return View();
+            ViewBag.Bowlers = _repo.Bowlers.ToList();
+            return View(new Bowler());
         }
 
-        //[HttpPost]
-        //public IActionResult Create()
-        //{
-        //    return View();
-        //}
+        [HttpPost]
+        public IActionResult Create(Bowler bowler)
+        {
+            if (ModelState.IsValid)
+            {
+                _repo.AddBowler(bowler);
+                return RedirectToAction("ContactList");
+            }
+            // ViewBag.Categories = _appContext.ToList(); where is categories coming from? It isn't a property of appointment
+            return View("Create");
+        }
+
+
+        //------ EDIT ----------
+
     }    
 }

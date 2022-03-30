@@ -1,22 +1,26 @@
 ﻿<Properties StartupConfiguration="{D9AF357A-436E-4BC7-929B-A9DFE3966B70}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MySQLFun/appsettings.json">
+    <Files>
+      <File FileName="MySQLFun/Views/Home/ContactList.cshtml" Line="48" Column="73" />
+      <File FileName="MySQLFun/Controllers/HomeController.cs" Line="52" Column="41" />
+      <File FileName="MySQLFun/Models/BowlersDBContext.cs" Line="1" Column="1" />
+      <File FileName="MySQLFun/Views/Home/Create.cshtml" Line="16" Column="35" />
+      <File FileName="MySQLFun/Models/IBowlersRepository.cs" Line="14" Column="44" />
+      <File FileName="MySQLFun/Models/EFBowlersRepository.cs" Line="34" Column="36" />
+      <File FileName="MySQLFun/appsettings.json" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MySQLFun" expanded="True">
             <Node name="MySQLFun" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Pages" expanded="True">
-                <Node name="Admin" expanded="True">
-                  <Node name="Index.cshtml" expanded="True">
-                    <Node name="Index.cshtml.cs" selected="True" />
-                  </Node>
-                </Node>
-              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
+              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>
