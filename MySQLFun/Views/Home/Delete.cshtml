@@ -7,10 +7,11 @@
 <h1>Delete</h1>
 
 <form method="post">
+   
+    <p>Are you SURE you want to delete the record for @Model.BowlerFirstName @Model.BowlerLastName?</p>
+    <input asp-for="BowlerID" hidden />
 
-    <p>Are you SURE you want to delete the record?</p>
-
-    <button type="submit">Yes</button>
-    <button asp-action="ContactList">Cancel</button>
+    <button type="submit" class="btn btn-sm btn-danger">Yes</button>
+    <button asp-action="ContactList" class="btn btn-sm ">Cancel</button>
 
 </form>

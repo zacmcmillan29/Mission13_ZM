@@ -30,9 +30,9 @@ namespace MySQLFun.Models
             _context.SaveChanges();
         }
 
-        public void DeleteBowler (Bowler b)
+        public void DeleteBowler (Bowler bowler)
         {
-            _context.Remove(b);
+            _context.Remove(bowler);
             _context.SaveChanges();
         }
 
