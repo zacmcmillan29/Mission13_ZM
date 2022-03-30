@@ -34,6 +34,13 @@ namespace MySQLFun
            });
 
             services.AddScoped<IBowlersRepository, EFBowlersRepository>();
+
+            //blazor pages
+            services.AddServerSideBlazor();
+
+            //adding Razor Pages!
+            services.AddRazorPages();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,6 +61,8 @@ namespace MySQLFun
 
             app.UseRouting();
 
+            app.UseStaticFiles();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -61,6 +70,11 @@ namespace MySQLFun
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                //endpoints.MapRazorPages();
+
+                endpoints.MapBlazorHub();
+                endpoints.MapFallbackToPage("/admin/{*catchall}", "/Admin/Index");
             });
         }
     }

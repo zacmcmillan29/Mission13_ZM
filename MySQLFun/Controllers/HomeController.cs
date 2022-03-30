@@ -22,6 +22,11 @@ namespace MySQLFun.Controllers
 
         public IActionResult Index()
         {
+            return View();
+        }
+
+        public IActionResult ContactList()
+        {
             //this pulls in the dataset info!
             //var blah = _context.Recipes.ToList();
             var blah = _repo.Bowlers.ToList();
@@ -30,5 +35,16 @@ namespace MySQLFun.Controllers
             return View(blah);
         }
 
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        //[HttpPost]
+        //public IActionResult Create()
+        //{
+        //    return View();
+        //}
     }    
 }

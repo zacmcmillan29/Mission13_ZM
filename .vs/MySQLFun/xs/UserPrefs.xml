@@ -1,24 +1,17 @@
 ﻿<Properties StartupConfiguration="{D9AF357A-436E-4BC7-929B-A9DFE3966B70}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MySQLFun/Models/Bowler.cs">
-    <Files>
-      <File FileName="MySQLFun/Startup.cs" Line="32" Column="73" />
-      <File FileName="MySQLFun/appsettings.json" Line="11" Column="73" />
-      <File FileName="MySQLFun/Program.cs" />
-      <File FileName="MySQLFun/Views/Home/Index.cshtml" />
-      <File FileName="MySQLFun/Controllers/HomeController.cs" Line="27" Column="1" />
-      <File FileName="MySQLFun/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
-      <File FileName="MySQLFun/Views/_ViewImports.cshtml" Line="1" Column="1" />
-      <File FileName="MySQLFun/Views/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="MySQLFun/Models/Bowler.cs" Line="18" Column="53" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MySQLFun" expanded="True">
             <Node name="MySQLFun" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Bowler.cs" selected="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Admin" expanded="True">
+                  <Node name="Index.cshtml" expanded="True">
+                    <Node name="Index.cshtml.cs" selected="True" />
+                  </Node>
+                </Node>
               </Node>
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
