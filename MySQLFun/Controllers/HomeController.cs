@@ -40,7 +40,12 @@ namespace MySQLFun.Controllers
             return View(blah);
         }
 
-        //------ CREAD ----------
+        public IActionResult TeamView()
+        {
+            return View();
+        }
+
+        //------ CREATE ----------
 
 
         [HttpGet]
