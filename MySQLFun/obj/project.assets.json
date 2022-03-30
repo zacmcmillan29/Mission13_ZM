@@ -876,11 +876,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/zacmcmillan/Library/Mobile Documents/com~apple~CloudDocs/IS junior core/WINTER 2022/IS 413/ClassWalkthroughs/Mission_13_MySQL/MySQLFun/MySQLFun/MySQLFun.csproj",
+      "projectUniqueName": "/Users/zacmcmillan/Library/Mobile Documents/com~apple~CloudDocs/IS junior core/WINTER 2022/IS 413/Mission Assignments/13_ZM_holder/Mission13_ZM/MySQLFun/MySQLFun.csproj",
       "projectName": "MySQLFun",
-      "projectPath": "/Users/zacmcmillan/Library/Mobile Documents/com~apple~CloudDocs/IS junior core/WINTER 2022/IS 413/ClassWalkthroughs/Mission_13_MySQL/MySQLFun/MySQLFun/MySQLFun.csproj",
+      "projectPath": "/Users/zacmcmillan/Library/Mobile Documents/com~apple~CloudDocs/IS junior core/WINTER 2022/IS 413/Mission Assignments/13_ZM_holder/Mission13_ZM/MySQLFun/MySQLFun.csproj",
       "packagesPath": "/Users/zacmcmillan/.nuget/packages/",
-      "outputPath": "/Users/zacmcmillan/Library/Mobile Documents/com~apple~CloudDocs/IS junior core/WINTER 2022/IS 413/ClassWalkthroughs/Mission_13_MySQL/MySQLFun/MySQLFun/obj/",
+      "outputPath": "/Users/zacmcmillan/Library/Mobile Documents/com~apple~CloudDocs/IS junior core/WINTER 2022/IS 413/Mission Assignments/13_ZM_holder/Mission13_ZM/MySQLFun/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/zacmcmillan/.config/NuGet/NuGet.Config"

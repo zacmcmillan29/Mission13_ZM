@@ -7,13 +7,13 @@ namespace MySQLFun.Controllers
     public class HomeController : Controller
     {
 
-        private RecipesDBContext _context { get; set; }
-        private IRecipesRepository _repo { get; set; }
+        private BowlersDBContext _context { get; set; }
+        private IBowlersRepository _repo { get; set; }
    
 
         //contstructor
         //public HomeController(RecipesDBContext temp)
-        public HomeController (IRecipesRepository temp)
+        public HomeController (IBowlersRepository temp)
         {
             //_context = temp;
             _repo = temp;
@@ -24,7 +24,7 @@ namespace MySQLFun.Controllers
         {
             //this pulls in the dataset info!
             //var blah = _context.Recipes.ToList();
-            var blah = _repo.Recipes.ToList();
+            var blah = _repo.Bowlers.ToList();
 
             //pass dataset info to the view!
             return View(blah);

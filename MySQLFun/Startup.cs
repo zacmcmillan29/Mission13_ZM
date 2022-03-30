@@ -27,13 +27,13 @@ namespace MySQLFun
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<RecipesDBContext>(options =>
+            services.AddDbContext<BowlersDBContext>(options =>
            {
-               options.UseMySql(Configuration["ConnectionStrings:RecipesDbConnection"]);
+               options.UseMySql(Configuration["ConnectionStrings:BowlersDbConnection"]);
 
            });
 
-            services.AddScoped<IRecipesRepository, EFRecipesRepository>();
+            services.AddScoped<IBowlersRepository, EFBowlersRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -3,17 +3,17 @@ using System.Linq;
 
 namespace MySQLFun.Models
 {
-    public class EFRecipesRepository : IRecipesRepository
+    public class EFBowlersRepository : IBowlersRepository
     {
 
-        private RecipesDBContext _context { get; set; }
+        private BowlersDBContext _context { get; set; }
 
-        public EFRecipesRepository (RecipesDBContext temp)
+        public EFBowlersRepository (BowlersDBContext temp)
         {
             _context = temp;
         }
 
-        public IQueryable<Recipe> Recipes => _context.Recipes;
+        public IQueryable<Bowler> Bowlers => _context.Bowlers;
 
         //IQueryable<Recipe> IRecipesRepository.Recipes { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
