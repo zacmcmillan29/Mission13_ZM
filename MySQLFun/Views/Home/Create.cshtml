@@ -3,6 +3,8 @@
 }
 @model Bowler
 
+<h1>Add a Bowler</h1>
+
 <form method="post">
     <div asp-validation-summary="All"></div>
 
@@ -48,7 +50,7 @@
     </select>
     <br />
 
-    <button type="submit">Add</button>
-    <button asp-controller="Team" asp-action="TeamView">Cancel</button>
+    <button class="btn btn-success" type="submit">Add</button>
+    <button class="btn btn-dark" asp-controller="Team" asp-action="TeamView">Cancel</button>
 
 </form>
