@@ -2,7 +2,7 @@
     ViewData["Title"] = "Edit";
 }
 @model Bowler
-<h1>Edit</h1>
+<h1>Edit @Model.BowlerFirstName @Model.BowlerLastName</h1>
 
 <form method="post">
     <input asp-for="BowlerID" type="hidden" />
