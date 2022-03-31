@@ -10,12 +10,14 @@
     <None Remove="Pomelo.EntityFrameworkCore.MySql" />
     <None Remove="Pages\" />
     <None Remove="Pages\Admin\" />
+    <None Remove="Views\Team\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Pages\" />
     <Folder Include="Pages\Admin\" />
     <Folder Include="wwwroot\img\" />
+    <Folder Include="Views\Team\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.22" />

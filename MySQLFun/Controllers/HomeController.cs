@@ -31,19 +31,15 @@ namespace MySQLFun.Controllers
         public IActionResult ContactList()
         {
             //this pulls in the dataset info!
-            //var blah = _context.Recipes.ToList();
             var blah = _repo.Bowlers
-                .OrderBy(x => x.BowlerFirstName)
+                //.OrderBy(x => x.BowlerFirstName)
                 .ToList();
 
             //pass dataset info to the view!
             return View(blah);
         }
 
-        public IActionResult TeamView()
-        {
-            return View();
-        }
+       
 
         //------ CREATE ----------
 

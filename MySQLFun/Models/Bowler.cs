@@ -29,5 +29,7 @@ namespace MySQLFun.Models
 
         public string BowlerPhoneNumber { get; set; }
 
+        public int TeamID { get; set; }
+
     }
 }

@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Manatees Roster";
+}
+
+@model List<Bowler>
+
+
+<h1>Manatees</h1>
+
+<div class="container">
+    <a class="navbar-brand" asp-area="" asp-controller="Team" asp-action="ContactList">All Players</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Team" asp-action="Marlins">1 Marlins</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Team" asp-action="Sharks">2 Sharks</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Team" asp-action="Terrapins">3 Terrapins</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Team" asp-action="Barracudas">4 Barracudas</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Team" asp-action="Dolphins">5 Dolphins</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Team" asp-action="Orcas">6 Orcas</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Team" asp-action="Manatees">7 Manatees</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Team" asp-action="Swordfish">8 Swordfish</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Team" asp-action="Huckleberrys">9 Huckleberrys</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Team" asp-action="MintJuleps">10 MintJuleps</a>
+    </div>
+</div>
+
+
+<br />
+
+<table class="table table-bordered table-striped">
+    <thead class="font-weight-bold">
+        <tr>
+            <td>First Name</td>
+            <td>Middle</td>
+            <td>Last Name</td>
+            <td>Address</td>
+            <td>City</td>
+            <td>State</td>
+            <td>Zip</td>
+            <td>Phone Number</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var x in Model)
+        {
+            <tr>
+                <td>@x.BowlerFirstName</td>
+                <td>@x.BowlerMiddleInit</td>
+                <td>@x.BowlerLastName</td>
+                <td>@x.BowlerAddress</td>
+                <td>@x.BowlerCity</td>
+                <td>@x.BowlerState</td>
+                <td>@x.BowlerZip</td>
+                <td>@x.BowlerPhoneNumber</td>
+                <td class="text-center">
+                    <a class="btn btn-sm " asp-controller="Home" asp-action="Edit" asp-route-id="@x.BowlerID">Edit</a>
+                </td>
+                <td class="text-center">
+                    <a class="btn btn-sm btn-danger" asp-controller="Home" asp-action="Delete" asp-route-id="@x.BowlerID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
