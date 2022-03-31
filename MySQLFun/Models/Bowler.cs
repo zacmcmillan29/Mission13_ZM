@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MySQLFun.Models
 {
@@ -29,7 +30,9 @@ namespace MySQLFun.Models
 
         public string BowlerPhoneNumber { get; set; }
 
+        [ForeignKey ("Teams")]
         public int TeamID { get; set; }
+        public Team Teams { get; set; }
 
     }
 }

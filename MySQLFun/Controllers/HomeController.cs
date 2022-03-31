@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MySQLFun.Models;
 
 namespace MySQLFun.Controllers
@@ -30,8 +31,10 @@ namespace MySQLFun.Controllers
 
         public IActionResult ContactList()
         {
+
             //this pulls in the dataset info!
             var blah = _repo.Bowlers
+                .Include(x => x.Teams)
                 //.OrderBy(x => x.BowlerFirstName)
                 .ToList();
 
@@ -47,7 +50,7 @@ namespace MySQLFun.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            ViewBag.Bowlers = _repo.Bowlers.ToList();
+            ViewBag.Teams = _repo.Teams.ToList();
             return View(new Bowler());
         }
 
@@ -57,10 +60,10 @@ namespace MySQLFun.Controllers
             if (ModelState.IsValid)
             {
                 _repo.AddBowler(bowler);
-                return RedirectToAction("ContactList");
+                return RedirectToAction("TeamView", "Team", null);
             }
             // ViewBag.Categories = _appContext.ToList(); where is categories coming from? It isn't a property of appointment
-            return View("Create");
+            return RedirectToAction("TeamView", "Team", null);
         }
 
 
@@ -69,6 +72,7 @@ namespace MySQLFun.Controllers
         [HttpGet]
         public IActionResult Edit (int id)
         {
+            ViewBag.Teams = _repo.Teams.ToList();
             var person = _repo.Bowlers.Single(x => x.BowlerID == id);
             return View(person);
         }
@@ -76,8 +80,9 @@ namespace MySQLFun.Controllers
         [HttpPost]
         public IActionResult Edit (Bowler b)
         {
+            ViewBag.Teams = _repo.Teams.ToList();
             _repo.SaveBowler(b);
-            return RedirectToAction("ContactList");
+            return RedirectToAction("TeamView", "Team", null);
         }
 
         // ----- DELETE -------
@@ -93,7 +98,7 @@ namespace MySQLFun.Controllers
         public IActionResult Delete (Bowler bowler)
         {
             _repo.DeleteBowler(bowler);
-            return RedirectToAction("ContactList");
+            return RedirectToAction("TeamView", "Team", null);
 
         }
 

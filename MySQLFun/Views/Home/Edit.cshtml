@@ -5,6 +5,7 @@
 <h1>Edit</h1>
 
 <form method="post">
+    <input asp-for="BowlerID" type="hidden" />
     <label asp-for="BowlerFirstName">Bowler First Name:</label>
     <input asp-for="BowlerFirstName" />
     <br />
@@ -38,6 +39,15 @@
     <input asp-for="BowlerPhoneNumber" />
     <br />
 
+    <label asp-for="TeamID">Team:</label>
+    <select asp-for="TeamID">
+        @foreach (Team t in ViewBag.Teams)
+        {
+            <option value="@t.TeamID">@t.TeamName</option>
+        }
+    </select>
+    <br />
+
     <button type="submit">Add</button>
-    <button asp-action="ContactList">Cancel</button>
+    <button asp-controller="Home" asp-action="ContactList">Cancel</button>
 </form>
