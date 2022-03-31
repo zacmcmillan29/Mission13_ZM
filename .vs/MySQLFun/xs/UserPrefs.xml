@@ -1,8 +1,11 @@
 ﻿<Properties StartupConfiguration="{D9AF357A-436E-4BC7-929B-A9DFE3966B70}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MySQLFun/Views/Shared/_Layout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MySQLFun/Views/Home/Edit.cshtml">
     <Files>
-      <File FileName="MySQLFun/Controllers/HomeController.cs" Line="102" Column="1" />
-      <File FileName="MySQLFun/Views/Shared/_Layout.cshtml" Line="23" Column="32" />
+      <File FileName="MySQLFun/Controllers/HomeController.cs" Line="65" Column="1" />
+      <File FileName="MySQLFun/Views/Shared/_Layout.cshtml" Line="21" Column="25" />
+      <File FileName="MySQLFun/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="MySQLFun/Views/Home/Create.cshtml" Line="1" Column="1" />
+      <File FileName="MySQLFun/Views/Home/Edit.cshtml" Line="9" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,10 +15,10 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="_Layout.cshtml" selected="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Edit.cshtml" selected="True" />
                 </Node>
+                <Node name="Shared" expanded="True" />
                 <Node name="Team" expanded="True" />
               </Node>
             </Node>

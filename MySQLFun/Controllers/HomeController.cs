@@ -21,28 +21,17 @@ namespace MySQLFun.Controllers
         }
 
 
+
+
+
+        //------ READ ----------
+
         public IActionResult Index()
         {
             return View();
         }
 
 
-        //------ READ ----------
-
-        public IActionResult ContactList()
-        {
-
-            //this pulls in the dataset info!
-            var blah = _repo.Bowlers
-                .Include(x => x.Teams)
-                //.OrderBy(x => x.BowlerFirstName)
-                .ToList();
-
-            //pass dataset info to the view!
-            return View(blah);
-        }
-
-       
 
         //------ CREATE ----------
 
@@ -62,7 +51,6 @@ namespace MySQLFun.Controllers
                 _repo.AddBowler(bowler);
                 return RedirectToAction("TeamView", "Team", null);
             }
-            // ViewBag.Categories = _appContext.ToList(); where is categories coming from? It isn't a property of appointment
             return RedirectToAction("TeamView", "Team", null);
         }
 
