@@ -1,13 +1,12 @@
 ﻿<Properties StartupConfiguration="{D9AF357A-436E-4BC7-929B-A9DFE3966B70}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MySQLFun/Views/Team/TeamView.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MySQLFun/Views/Home/Delete.cshtml">
     <Files>
-      <File FileName="MySQLFun/Controllers/HomeController.cs" Line="1" Column="1" />
-      <File FileName="MySQLFun/Models/EFBowlersRepository.cs" Line="1" Column="1" />
-      <File FileName="MySQLFun/Views/Home/Edit.cshtml" Line="53" Column="32" />
-      <File FileName="MySQLFun/Views/Home/Create.cshtml" Line="6" Column="17" />
-      <File FileName="MySQLFun/Views/Home/Delete.cshtml" Line="1" Column="1" />
-      <File FileName="MySQLFun/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="MySQLFun/Views/Team/Sharks.cshtml" Line="18" Column="49" />
+      <File FileName="MySQLFun/Views/Team/Swordfish.cshtml" Line="24" Column="49" />
+      <File FileName="MySQLFun/Views/Team/Terrapins.cshtml" Line="19" Column="49" />
       <File FileName="MySQLFun/Views/Team/TeamView.cshtml" Line="1" Column="1" />
+      <File FileName="MySQLFun/Views/Home/Index.cshtml" Line="5" Column="33" />
+      <File FileName="MySQLFun/Views/Home/Delete.cshtml" Line="13" Column="29" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,11 +16,11 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True" />
-                <Node name="Team" expanded="True">
-                  <Node name="TeamView.cshtml" selected="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Delete.cshtml" selected="True" />
                 </Node>
+                <Node name="Shared" expanded="True" />
+                <Node name="Team" expanded="True" />
               </Node>
             </Node>
           </Node>
